@@ -4,6 +4,22 @@ Kit para hacer Shorts técnicos verticales (50-60 s) con IA: guion, voz clonada,
 
 Es el método con el que hago los Shorts de [@Nambu89](https://www.youtube.com/@Nambu89). Funciona con cualquier tema; el ejemplo es de Power BI.
 
+## Para qué sirve
+Para convertir una duda técnica habitual («¿Import o DirectQuery?», «¿Lakehouse o Warehouse?») en una píldora de vídeo de un minuto que se pueda publicar cada semana sin pasarse el día editando:
+
+- **Explica con animación, no con capturas.** Las escenas son HTML animado con GSAP y se renderizan a vídeo con HyperFrames. Cada idea aparece en pantalla justo cuando la voz la nombra.
+- **Pone tu voz sin grabarte.** Escribes el guion, ElevenLabs lo lee con tu voz clonada y el kit mide dónde empieza y acaba cada frase para montar el vídeo encima.
+- **Subtítulos y efectos automáticos.** Subtítulos palabra a palabra, como los de los Shorts virales, y efectos de sonido cuadrados con la imagen.
+- **Cada vídeo lleva su guía.** Un PDF gratuito de unas 8 páginas con la comparativa y las fuentes oficiales. Sirve para la web y también como carrusel de LinkedIn.
+- **Sale listo para publicar.** Título, descripción, etiquetas y post de LinkedIn a partir de una plantilla.
+
+El resultado: un vídeo vertical 1080×1920 de 50-60 s para YouTube Shorts y LinkedIn, con su guía en PDF.
+
+## Qué necesitas
+- Claude Code (recomendado) o ganas de seguir los pasos a mano.
+- Una cuenta de ElevenLabs con tu voz clonada.
+- Un ordenador con Node, Python y ffmpeg. No hace falta GPU: la transcripción va en CPU.
+
 ## Cómo se usa
 La forma más cómoda es con Claude Code: abre esta carpeta y pide «hazme un Short sobre <tema>». La skill `.claude/skills/shorts-kit/SKILL.md` le explica el proceso paso a paso, con las reglas que hemos aprendido a base de renders fallidos.
 
